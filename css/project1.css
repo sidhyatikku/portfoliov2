@@ -62,107 +62,6 @@ body {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.50);
 }
 
-.projects {
-  margin-right: 0;
-  margin-top: 8vh;
-  width: 100%;
-  object-fit: cover;
-}
-
-.proj_name {
-  display: inline-block;
-  position: relative;
-}
-
-.proj_image {
-  object-fit: cover;
-  object-position: top;
-  height: 31.1vw;
-  width: 100%;
-}
-.proj_overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:rgba(0,0,0,0.65);
-}
-.proj_name:hover .proj_overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-.proj_overlay_text {
-  color: white;
-  font-size: 25px;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.projid {
-  display: inline;
-}
-
-.projimg {
-  object-fit: cover;
-  object-position: top;
-  height: 27vw;
-  width: 49.8%;
-}
-
-.last_section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: #eebf00;
-  height: 40vh;
-  width: 100%;
-}
-
-.typewrite {
-  font-weight: 600;
-  font-size: 3vw;
-  color: black;
-}
-
-.last_email {
-  font-size: 4.7vw;
-  font-weight: 800;
-  color: #9c091b;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 2vh;
-  font-size: 0;
-  text-align: center;
-}
-.end_text {
-  background-color: #1d1d1d;
-  padding: 2%;
-  font-size: 15px;
-  text-align: center;
-  font-weight: 600;
-  color: #aaaaaa;
-  font-family: sofia-pro, Helvetica, sans-serif;
-}
-
-#heartrex {
-  margin-right: 0;
-  font-size:16px;
-  animation: colorchange 10s infinite;
-}
 
 @keyframes colorchange {
       0%   {color: red;}
@@ -171,13 +70,6 @@ body {
       75%  {color: blue;}
       100% {color: red;}
 }
-
-.social {
-  margin: 2%;
-  margin-top: 3%;
-  text-align: center;
-}
-
 
 @media only screen and (max-height: 700px) and (orientation: portrait) {
 

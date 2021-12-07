@@ -1,6 +1,4 @@
-@import url('https://cdn.rawgit.com/mfd/6940194d19c423c59b3964701c854e44/raw/4f574505e53addf632209ee262d13c700b762bae/avenir.css');
-@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
- @import url("https://use.typekit.net/lft8ipp.css");
+@import url("https://use.typekit.net/qpr6lcg.css");
 
 html{
   scroll-behavior: smooth;
@@ -18,12 +16,12 @@ i.fas:hover, i.fab:hover {
 body {
   margin: 0;
   background-color: #151515;
-  font-family: 'Avenir Next Cyr W00','GothamPro', Helvetica, sans-serif;
+  font-family: sofia-pro, Helvetica, sans-serif;
   font-weight: 500;
 }
 .header {
   background-color: black;
-  font-family: 'Avenir Next Cyr W00','GothamPro', Helvetica, sans-serif;
+  font-family: sofia-pro, Helvetica, sans-serif;
   color: #ffffff;
   position: fixed;
   padding-top: 1.5%;
@@ -54,7 +52,7 @@ body {
   padding-top: 0.25%;
 }
 .header.active {
-    background: #353535;
+    background: black;
     padding-top: 1%;
     padding-bottom: 1%;
     color: white;
@@ -71,7 +69,7 @@ body {
 }
 
 .about_text_parent {
-  margin-top: 15vh;
+  margin-top: 20vh;
   margin-left: 5vw;
   margin-right: 15vw;
 }
@@ -93,28 +91,7 @@ body {
   width: auto;
   height: 45vh;
   margin-left: 10vw;
-  margin-top: 15vh;
-}
-
-.get_touch {
-  margin-bottom: 7vh;
-}
-
-.get_touch_text {
-  color: white;
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.get_touch_email {
-  font-size: 30px;
-  color: yellow;
-  text-decoration: underline;
-  transition: 0.3s ease-in-out;
-}
-
-.get_touch_email:hover {
-  color: red;
+  margin-top: 20vh;
 }
 
 .footer {
@@ -131,7 +108,7 @@ body {
   font-weight: 600;
   margin-bottom: 2%;
   color: #aaaaaa;
-  font-family: 'Avenir Next Cyr W00','GothamPro', Helvetica, sans-serif;
+  font-family: sofia-pro, Helvetica, sans-serif;
 }
 
 #heartrex {
@@ -157,7 +134,7 @@ body {
 @media only screen and (max-height: 700px) and (orientation: portrait) {
   i.fas,
   i.fab {
-    color: #F24646;
+    color: white;
     font-size: 19px;
     margin-right: 7%;
   }
@@ -166,7 +143,7 @@ body {
     font-size: 25px;
   }
   i.fas.fa-bars.active{
-    color: #F24646;
+    color: white;
     font-size: 25px;
   }
 
@@ -175,8 +152,15 @@ body {
     font-size: 30px;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #ffffff;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
   }
+
+  .header.active {
+    background-color: black;
+  }
+
   .header a.nameh {
     float: left;
     text-decoration:none;
@@ -197,12 +181,6 @@ body {
 #linkh{
   padding-top: 2%;
   display: none;
-}
-
-.header {
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
 }
 
 .header #linkh {
@@ -228,7 +206,7 @@ body {
 }
 
 .header a.hamburger.active {
-  color: #F24646;
+  color: white;
 }
 
 
@@ -261,7 +239,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   padding-top: 0.25%;
-  color: #F24646;
+  color: white;
 }
 
 
@@ -282,7 +260,8 @@ body {
     .about_text_parent {
       margin-top: 0;
       margin-left: 10vw;
-      margin-right: 10vw;
+      margin-right: 3.3333vw;
+      hyphens: none;
     }
     .about_me_intro {
       font-size: 4vh;
@@ -307,26 +286,17 @@ body {
       margin-bottom: 8vh;
     }
 
-  .footer.active {
-    opacity: 1;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: white;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.50);
-  }
   .footer {
     margin: 0;
     opacity: 1;
-    position: fixed;
+    position: inherit;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 80%;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: black;
     color: white;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.50);
@@ -351,7 +321,7 @@ body {
 
   i.fas,
   i.fab {
-    color: #F24646;
+    color: white;
     font-size: 19px;
     margin-right: 7%;
   }
@@ -360,12 +330,12 @@ i.fas.fa-bars{
   font-size: 25px;
 }
 i.fas.fa-bars.active{
-  color: #F24646;
+  color: white;
   font-size: 25px;
 }
 .header {
   overflow: hidden;
-  background-color: #F24646;
+  background-color: black;
   position: fixed;
 }
 
@@ -391,7 +361,7 @@ i.fas.fa-bars.active{
 }
 
 .header a.hamburger.active {
-  color: #F24646;
+  color: white;
 }
 
 
@@ -424,7 +394,7 @@ i.fas.fa-bars.active{
   font-weight: 600;
   font-size: 20px;
   padding-top: 0.25%;
-  color: #F24646;
+  color: white;
 }
 
   .intro {
@@ -444,8 +414,8 @@ i.fas.fa-bars.active{
     margin-left: 0;
     margin-top: 9vh;
     margin-bottom: 2vh;
-    height: 25vh;
-    width: 25vh;
+    height: 22vh;
+    width: 22vh;
     object-fit: cover;
     object-position: 10% 0;
   }
@@ -453,15 +423,15 @@ i.fas.fa-bars.active{
   .about_text_parent {
     margin-top: 0;
     margin-left: 10vw;
-    margin-right: 10vw;
+    margin-right: 8vw;
   }
   .about_me_intro {
-    font-size: 4vh;
+    font-size: 3.4vh;
   }
 
   .about_txt {
     text-align: initial;
-    font-size: 1.75vh;
+    font-size: 1.7vh;
     margin-bottom: 2vh;
     hyphens: auto;
   }
@@ -474,27 +444,18 @@ i.fas.fa-bars.active{
     font-size: 3vh;
   }
 
-
-  .footer.active {
-    opacity: 1;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: white;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.50);
-  }
   .footer {
     margin: 0;
     opacity: 1;
     position: fixed;
+    bottom: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 80%;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: black;
     color: white;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.50);
@@ -517,20 +478,32 @@ i.fas.fa-bars.active{
 
 @media only screen and (max-width: 1499px) and (orientation: landscape){
 
+  i.fas,
+  i.fab {
+    color: white;
+    font-size: 15px;
+    margin-right: 7%;
+  }
+
 
   #myImage {
-    margin-top: 12vh;
+    margin-top: 18vh;
+  }
+
+  .about_info {
+    margin-bottom: 0;
   }
 
   .about_text_parent {
-    margin-top: 12vh;
+    margin-top: 18vh;
   }
   .about_me_intro {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
   }
 
   .about_txt {
     font-size: 1.3vw;
+    margin-bottom: 0;
   }
 
   .get_touch_text {
@@ -543,6 +516,15 @@ i.fas.fa-bars.active{
 
   .get_touch {
     margin-bottom: 3vh;
+  }
+
+  .footer {
+    position: inherit;
+
+  }
+
+  .end_text {
+    margin-bottom: 1%;
   }
 }
 
